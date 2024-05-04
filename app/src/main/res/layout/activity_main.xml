@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton android:id="@+id/btnImgAmigo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="127dp"
+        android:layout_marginEnd="134dp"
+        android:src="@android:drawable/ic_menu_camera"/>
+
+    <EditText android:id="@+id/txtnombre"
+        android:inputType="textPersonName"
+        android:hint="Nombre"
+        android:layout_below="@+id/btnImgAmigo"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText android:id="@+id/txtdescripcion"
+        android:hint="descripcion"
+        android:inputType="textMultiLine"
+        android:layout_below="@id/txtnombre"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText android:id="@+id/txtmarca"
+        android:hint="marca"
+        android:inputType="textPersonName"
+        android:layout_below="@id/txtdescripcion"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText android:id="@+id/txtpresentacion"
+        android:hint="presentacion"
+        android:inputType="textMultiLine"
+        android:layout_below="@id/txtmarca"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText android:id="@+id/txtprecio"
+        android:inputType="numberDecimal"
+        android:hint="precio"
+        android:layout_below="@id/txtpresentacion"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/txtstock"
+        android:inputType="numberDecimal"
+        android:hint="stock"
+        android:layout_below="@id/txtprecio"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/txtcosto"
+        android:inputType="numberDecimal"
+        android:hint="Costo"
+        android:layout_below="@id/txtstock"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnGuardarAgendaAmigos"
+        android:layout_below="@id/txtcosto"
+        android:layout_marginTop="40dp"
+        android:text="GUARDAR PRODUCTO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabListarAmigos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@android:drawable/ic_menu_revert"/>
+</RelativeLayout>
